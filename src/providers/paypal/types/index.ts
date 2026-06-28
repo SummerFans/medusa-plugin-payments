@@ -1,6 +1,6 @@
 export interface PayPalOptions {
   sandbox: boolean;
-  autoCapture:string;
+  autoCapture:boolean;
   clientId: string;
   clientSecret: string;
   timeout?: number;

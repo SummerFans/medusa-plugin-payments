@@ -438,7 +438,7 @@ class PaypalProviderService extends AbstractPaymentProvider<PayPalOptions> {
         },
       };
 
-      if (this.options_.autoCapture == "true") {
+      if (this.options_.autoCapture) {
         // * CAPTURE
         const capture = order.purchaseUnits?.[0]?.payments?.captures?.at(0);
         if (!capture) {

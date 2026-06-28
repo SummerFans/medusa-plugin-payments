@@ -54,7 +54,7 @@ export const buildPayPalOrderParams = (
   extra?: Record<string, unknown>,
 ): OrderRequest => {
 
-  const intent = options.autoCapture=='true'
+  const intent = options.autoCapture
       ? CheckoutPaymentIntent.Capture
       : CheckoutPaymentIntent.Authorize;
 

@@ -9,7 +9,7 @@ import {
 import { setTimeout } from "timers/promises";
 import { AbstractPaymentProvider } from "@medusajs/framework/utils";
 import Stripe from "stripe";
-import { ErrorCodes, ErrorIntentStatus, StripeOptions } from "./types";
+import { ErrorIntentStatus, StripeOptions } from "./types";
 import {
   AuthorizePaymentInput,
   AuthorizePaymentOutput,
@@ -33,7 +33,6 @@ import {
   WebhookActionResult,
 } from "@medusajs/framework/types";
 import { buildStripeParams, fromStripeAmount, toStripeAmount } from "./utils";
-import { OrdersController } from "@paypal/paypal-server-sdk";
 
 type InjectedDependencies = {
   logger: Logger;

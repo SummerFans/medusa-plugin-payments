@@ -6,7 +6,7 @@ Stripe and PayPal payment modules and providers for Medusa v2 commerce framework
 
 > | Requires Medusa v2.16.0 or later.
 
-## Installaction
+## Installation
 
 ```
 npm i medusa-plugin-payments
@@ -45,3 +45,10 @@ modules:[
     }
   ]
 ```
+
+
+## Webhook Endpoint 
+### Stripe: 
+`https://{domain}/hooks/payment/stripe`
+### Paypal: 
+`https://{domain}/hooks/payment/paypal`
